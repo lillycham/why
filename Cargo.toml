@@ -3,6 +3,9 @@ name = "why"
 version = "0.1.0"
 edition = "2021"
 description = "Explain why a file, command or listening port is on this machine"
+license = "MIT"
+repository = "https://github.com/lillycham/why"
+readme = "README.md"
 
 [dependencies]
 

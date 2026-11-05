@@ -14,7 +14,13 @@
           version = "0.1.0";
           src = ./.;
           cargoLock.lockFile = ./Cargo.lock;
-          meta.mainProgram = "why";
+          meta = {
+            description = "Explain why a file, command or listening port is on this machine";
+            homepage = "https://github.com/lillycham/why";
+            license = pkgs.lib.licenses.mit;
+            mainProgram = "why";
+            platforms = pkgs.lib.platforms.linux ++ pkgs.lib.platforms.darwin;
+          };
         };
         default = why;
       });
